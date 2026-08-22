@@ -1,4 +1,4 @@
-async function iniciarJogo() {
+export async function iniciarJogo() {
     // Cria a interface de leitura
     const rl = readline.createInterface({ input, output });
 
@@ -15,5 +15,3 @@ async function iniciarJogo() {
     rl.close();
     ciclo1.mostrarTodasAsCartas();
 }
-
-iniciarJogo();

@@ -46,6 +46,9 @@ export const ciclo1 = {
             }
             this.cartas[i] = ultimaCarta;
         }
+    },
+    mostrarEvento: function(){
+        return this.cartas[0].id;
     }
 }
 

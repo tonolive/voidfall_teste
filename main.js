@@ -3,6 +3,7 @@
 import { Cores } from './configuracoes/cores.js';
 import {cartasDociclo1, cartasDociclo2, cartasDociclo3} from './configuracoes/cartasDosCiclos.js'
 import { ciclo1, ciclo2, ciclo3 } from './objetos/ciclo.js';
+import { cartas } from  './objetos/cartas.js';
 import readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
 
@@ -13,6 +14,8 @@ console.log(`Esta é uma implementação teste do jogo de ${Cores.ROXO}boardgame
 // Configurar a partida
 let jogo = true;
 let quantidadeDeCiclos = 0;
+
+console.log(cartas);
 // jogador escolhe o nível da dificuldade
 // jogador escolhe a casa que deseja jogar
 // jogador escolhe o mapa que deseja jogar
@@ -22,9 +25,9 @@ let quantidadeDeCiclos = 0;
 
 // Abrir o primeiro Ciclo do jogo
 ciclo1.montarCartas(cartasDociclo1);
-ciclo1.mostrarTodasAsCartas();
+//ciclo1.mostrarTodasAsCartas();
 quantidadeDeCiclos = ciclo1.cartas[0].quantidadeDeCiclos;
-console.log(`${Cores.ROXO}A quantidade de ciclos do ciclo 1 é ${Cores.FUNDO_AZUL}${quantidadeDeCiclos}${Cores.RESET}`);
+console.log(`${Cores.ROXO}A quantidade de Rodadas do ciclo 1 é ${Cores.FUNDO_AZUL}${quantidadeDeCiclos}${Cores.RESET} e o Evento do ciclo 1: ${ciclo1.mostrarEvento()}`);
 
 //Enquanto quantidadeDeciclos > 0 {
 // Jogador escolhe a carta que deseja jogar
