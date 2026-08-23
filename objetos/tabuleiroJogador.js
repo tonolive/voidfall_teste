@@ -13,5 +13,14 @@ export const tabuleiroJogador = {
     habilidadeCasa: [],
     trilhaSociedade: [],
     trilhaGovernanca: [],
-    trilhaEconomia: []
+    trilhaEconomia: [],
+
+    montar: function(casas, configuracaoCasa){
+        this.casa = casas.casa;
+        this.tropasInativas = casas.tropas[configuracaoCasa].inativas;
+        this.tropasAtivas = casas.tropas[configuracaoCasa].prontas;
+        this.agendas.push(casas.agendaInicial[configuracaoCasa]);
+        this.tecnologias.push(casas.tecnologiaInicial);
+        
+    }
 }

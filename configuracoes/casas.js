@@ -2,7 +2,10 @@ export const casas = [
     {
         casa: "Belitan",
         tecnologiaInicial: "Alvejar",
-        agendaInicial: ["C2-A","C2-B"],
+        agendaInicial: {
+            "C2-A": "C2-A",
+            "C2-B": "C2-B"
+        },
         tropas: {
             "C2-A": {
                 inativas: 7,

@@ -3,20 +3,36 @@
 import { Cores } from './configuracoes/cores.js';
 import {cartasDociclo1, cartasDociclo2, cartasDociclo3} from './configuracoes/cartasDosCiclos.js'
 import { ciclo1, ciclo2, ciclo3 } from './objetos/ciclo.js';
+import { casas } from './configuracoes/casas.js';
+import { tabuleiroJogador } from './objetos/tabuleiroJogador.js';
+import { tabuleiroRecursos } from './objetos/tabuleiroRecursos.js';
 import { cartas } from  './objetos/cartas.js';
 import readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
 
 // Apresentação
 console.log(`${Cores.AZUL}Bem-vindo ao Voidfall${Cores.RESET}`);
-console.log(`Esta é uma implementação teste do jogo de ${Cores.ROXO}boardgame Voidfall${Cores.RESET} e ainda esta na fase de concepção do projeto.`);
+//console.log(`Esta é uma implementação teste do jogo de ${Cores.ROXO}boardgame Voidfall${Cores.RESET} e ainda esta na fase de concepção do projeto.`);
 
 // Configurar a partida
 let jogo = true;
 let quantidadeDeCiclos = 0;
 let quantidadeCatastrofe = 0;
+const casaEscolhida = "Belitan";
+const configuracaoCasa = "C2-B";
 
-console.log(cartas);
+//procura a casa que o jogador escolheu para jogar
+const casa = casas.find(
+    casa => casa.casa === casaEscolhida
+);
+
+//monta o tabuleiro do jogador coma casa escolhida
+tabuleiroJogador.montar(casa, configuracaoCasa);
+
+
+
+//console.log(tabuleiroJogador);
+//console.log(cartas);
 // jogador escolhe o nível da dificuldade
 // jogador escolhe a casa que deseja jogar
 // jogador escolhe o mapa que deseja jogar
