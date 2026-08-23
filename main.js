@@ -33,9 +33,9 @@ tabuleiroJogador.montar(casa, configuracaoCasa);
 acoesCasa[configuracaoCasa](tabuleiroJogador, tabuleiroRecursos, mapa);
 
 
-//console.log(tabuleiroJogador);
-//console.log(cartas);
-//console.log(tabuleiroRecursos);
+console.log(tabuleiroJogador);
+console.log(cartas);
+console.log(tabuleiroRecursos);
 
 
 // jogador escolhe o nível da dificuldade

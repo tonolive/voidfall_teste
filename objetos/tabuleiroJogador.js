@@ -17,10 +17,10 @@ export const tabuleiroJogador = {
 
     montar: function(casas, configuracaoCasa){
         this.casa = casas.casa;
-        this.tropasInativas = casas.tropas[configuracaoCasa].inativas;
-        this.tropasAtivas = casas.tropas[configuracaoCasa].prontas;
-        this.agendas.push(casas.agendaInicial[configuracaoCasa]);
-        this.tecnologias.push(casas.tecnologiaInicial);
+        this.tropasInativas = casas["configuracoes"][configuracaoCasa]["tropas"].inativas;
+        this.tropasAtivas = casas["configuracoes"][configuracaoCasa]["tropas"].prontas;
+        this.agendas.push(casas["configuracoes"][configuracaoCasa]["agendaInicial"]);
+        this.tecnologias.push(casas["configuracoes"][configuracaoCasa]["tecnologiaInicial"]);
         
     }
 }
