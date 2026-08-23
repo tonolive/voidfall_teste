@@ -7,6 +7,7 @@ import { casas } from './configuracoes/casas.js';
 import { tabuleiroJogador } from './objetos/tabuleiroJogador.js';
 import { tabuleiroRecursos } from './objetos/tabuleiroRecursos.js';
 import { cartas } from  './objetos/cartas.js';
+import { acoesCasa } from './regrasDoJogo/acoesCasa.js'
 import readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
 
@@ -18,6 +19,7 @@ console.log(`${Cores.AZUL}Bem-vindo ao Voidfall${Cores.RESET}`);
 let jogo = true;
 let quantidadeDeCiclos = 0;
 let quantidadeCatastrofe = 0;
+let mapa = "";
 const casaEscolhida = "Belitan";
 const configuracaoCasa = "C2-B";
 
@@ -28,7 +30,7 @@ const casa = casas.find(
 
 //monta o tabuleiro do jogador coma casa escolhida
 tabuleiroJogador.montar(casa, configuracaoCasa);
-
+acoesCasa[configuracaoCasa](tabuleiroJogador, tabuleiroRecursos, mapa);
 
 
 //console.log(tabuleiroJogador);

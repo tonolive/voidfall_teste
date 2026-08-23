@@ -1,11 +1,15 @@
-export const acoesCasas = {
+export const acoesCasa = {
 
-    aumentarNivelEnergiaEm1: function(tabuleiro) {
-        // aumenta produção de energia
+    "C2-A": function(tabuleiroJogador, tabuleiroRecurso, mapa) {
+        // habilidade C2-A
+        console.log("Fazendo a configuração da casa... A");
     },
 
-    aumentarNivelCreditosEAlimentosEm1: function(tabuleiro) {
-        // aumenta créditos e alimentos
+    "C2-B": function(tabuleiroJogador, tabuleiroRecurso, mapa) {
+        // habilidade C2-B
+        console.log("Fazendo a configuração da casa... A");
+        tabuleiroRecurso["alimentos"].nivel++;
+        tabuleiroRecurso["credito"].nivel++;
     }
 
 };
