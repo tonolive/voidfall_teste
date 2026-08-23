@@ -8,7 +8,7 @@ export const acoesCasa = {
     "C2-B": function(tabuleiroJogador, tabuleiroRecurso, mapa) {
         // habilidade C2-B
         console.log("Fazendo a configuração da casa... A");
-        tabuleiroRecurso["alimentos"].nivel++;
+        tabuleiroRecurso["alimento"].nivel++;
         tabuleiroRecurso["credito"].nivel++;
     }
 

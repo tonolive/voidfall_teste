@@ -10,7 +10,7 @@ import { cartas } from  './objetos/cartas.js';
 import { acoesCasa } from './regrasDoJogo/acoesCasa.js'
 import readline from 'readline/promises';
 import { stdin as input, stdout as output } from 'process';
-
+/**tree -I 'node_modules|.git' */
 // Apresentação
 console.log(`${Cores.AZUL}Bem-vindo ao Voidfall${Cores.RESET}`);
 //console.log(`Esta é uma implementação teste do jogo de ${Cores.ROXO}boardgame Voidfall${Cores.RESET} e ainda esta na fase de concepção do projeto.`);
@@ -35,6 +35,9 @@ acoesCasa[configuracaoCasa](tabuleiroJogador, tabuleiroRecursos, mapa);
 
 //console.log(tabuleiroJogador);
 //console.log(cartas);
+//console.log(tabuleiroRecursos);
+
+
 // jogador escolhe o nível da dificuldade
 // jogador escolhe a casa que deseja jogar
 // jogador escolhe o mapa que deseja jogar
