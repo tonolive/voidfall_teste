@@ -14,6 +14,7 @@ console.log(`Esta é uma implementação teste do jogo de ${Cores.ROXO}boardgame
 // Configurar a partida
 let jogo = true;
 let quantidadeDeCiclos = 0;
+let quantidadeCatastrofe = 0;
 
 console.log(cartas);
 // jogador escolhe o nível da dificuldade
