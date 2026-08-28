@@ -31,10 +31,10 @@ const casa = casas.find(
 //monta o tabuleiro do jogador coma casa escolhida
 tabuleiroJogador.montar(casa, configuracaoCasa);
 acoesCasa[configuracaoCasa](tabuleiroJogador, tabuleiroRecursos, mapa);
+tabuleiroRecursos.montar(casa.configuracoes[configuracaoCasa]);
 
-
-console.log(tabuleiroJogador);
-console.log(cartas);
+//console.log(tabuleiroJogador);
+//console.log(cartas);
 console.log(tabuleiroRecursos);
 
 
